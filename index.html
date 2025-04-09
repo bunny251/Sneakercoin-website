@@ -6,6 +6,20 @@
   <title>SneakerCoin</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/png" href="bunny-sneaker.png">
+  <style>
+  body {
+    background: linear-gradient(-45deg, #ff6ec4, #7873f5, #42e695, #ffe29f);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
+
   <script>
     console.log("SneakerCoin Landing Page Loaded");
   </script>
