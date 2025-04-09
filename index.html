@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+</style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SneakerCoin</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/png" href="bunny-sneaker.png">
-  <style>
-  body {
-    background: linear-gradient(-45deg, #ff6ec4, #7873f5, #42e695, #ffe29f);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+<style>
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  .animate-fade-in-up {
+    animation: fade-in-up 1s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1.5s ease-out forwards;
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 </style>
-
+  
   <script>
     console.log("SneakerCoin Landing Page Loaded");
   </script>
@@ -29,15 +50,17 @@
   <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-500 to-yellow-400">
     <div class="text-center p-6 max-w-2xl">
       <!-- Updated Logo Image -->
-      <img src="bunny-sneaker.png" alt="SneakerCoin Logo" class="mx-auto mb-6 w-32 h-32 rounded-full shadow-2xl">
+     <img src="bunny-sneaker.png" alt="SneakerCoin Logo"
+     class="mx-auto mb-6 w-32 h-32 rounded-full shadow-2xl float animate-fade-in" />
       
-      <h1 class="text-5xl font-extrabold mb-4 drop-shadow">Welcome to SneakerCoin</h1>
-      <p class="text-lg mb-6">The meme coin where streetwear, sneakers & crypto collide. Powered by the community, styled by the culture.</p>
-      <a href="https://pancakeswap.finance/swap?outputCurrency=0x889644b5395399557a261d487D12364aaF7bceB6&chain=bsc" 
-   target="_blank" 
-   class="bg-black text-white px-6 py-3 rounded-full border border-white hover:bg-white hover:text-black transition-all duration-300"
-   onclick="console.log('Buy Now on PancakeSwap clicked')">
-   Buy Now
+     <h1 class="text-5xl font-extrabold mb-4 drop-shadow animate-fade-in-up">
+  Welcome to SneakerCoin
+</h1>
+<p class="text-lg mb-6 animate-fade-in-up delay-200">
+  The meme coin where streetwear, sneakers & crypto collide...
+</p>
+     <a href="https://pancakeswap..." class="bg-black text-white px-6 py-3 rounded-full border hover:bg-white hover:text-black transition-all duration-300 animate-pulse">
+  Buy Now
 </a>
 
     </div>
