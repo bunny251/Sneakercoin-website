@@ -7,40 +7,40 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .animate-fadeInUp {
-      animation: fadeInUp 1s ease-out forwards;
+    .fade-up {
+      animation: fadeInUp 0.8s ease-out forwards;
     }
   </style>
 </head>
 
 <body class="text-white font-sans">
 
-  <!-- Header with Gradient -->
-  <header class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-center py-14">
-    <h1 class="text-5xl font-bold animate-fadeInUp">SneakerCoin ($SNKR)</h1>
-    <p class="mt-4 text-lg animate-fadeInUp">Where streetwear meets the blockchain. Powered by the culture.</p>
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-center py-16">
+    <img src="logo.png" alt="SneakerCoin Logo" class="mx-auto w-24 h-24 mb-4 fade-up" />
+    <h1 class="text-5xl font-bold fade-up">SneakerCoin ($SNKR)</h1>
+    <p class="mt-2 text-lg fade-up">Where streetwear meets the blockchain. Powered by the culture.</p>
   </header>
 
-  <!-- What is SneakerCoin Section -->
-  <section class="bg-[#111827] py-16 text-center px-6">
-    <h2 class="text-3xl font-semibold mb-4 animate-fadeInUp">What is SneakerCoin?</h2>
-    <p class="max-w-2xl mx-auto animate-fadeInUp text-gray-300">
+  <!-- What is SneakerCoin -->
+  <section class="bg-[#0F172A] text-center py-14 px-6">
+    <h2 class="text-3xl font-semibold mb-4 fade-up">What is SneakerCoin?</h2>
+    <p class="max-w-2xl mx-auto text-gray-300 fade-up">
       SneakerCoin ($SNKR) is the meme coin where streetwear, sneakers, and crypto collide.
       Built on the Binance Smart Chain, it's powered by the community — styled by the culture.
     </p>
   </section>
 
-  <!-- Token Info Section -->
-  <section class="bg-[#1F2937] py-16 text-center px-6">
-    <h2 class="text-3xl font-semibold mb-4 animate-fadeInUp">Token Info</h2>
-    <p class="animate-fadeInUp">💰 Total Supply: 1,000,000,000 SNKR</p>
-    <p class="animate-fadeInUp">🔗 Chain: BNB Smart Chain</p>
-    <p class="animate-fadeInUp">
-      📄 Contract:
-      <a class="text-blue-400 underline" href="https://bscscan.com/token/0x889644b5395399557a261d48f7D1236a4a7fbce6" target="_blank">
+  <!-- Token Info -->
+  <section class="bg-[#1E293B] text-center py-12 px-6">
+    <h2 class="text-3xl font-semibold mb-4 fade-up">Token Info</h2>
+    <p class="fade-up">💰 Total Supply: 1,000,000,000 SNKR</p>
+    <p class="fade-up">🔗 Chain: BNB Smart Chain</p>
+    <p class="fade-up">📄 Contract:
+      <a href="https://bscscan.com/token/0x889644b5395399557a261d48f7D1236a4a7fbce6" target="_blank" class="text-blue-400 underline">
         0x889...fbce6
       </a>
     </p>
@@ -48,13 +48,13 @@
 
   <!-- Footer -->
   <footer class="bg-black text-center py-8">
-    <div class="flex justify-center gap-6 text-2xl mb-4">
+    <div class="flex justify-center gap-6 text-2xl mb-3 fade-up">
       <a href="https://twitter.com" target="_blank">🐦</a>
       <a href="https://t.me" target="_blank">💬</a>
       <a href="https://discord.com" target="_blank">🎮</a>
       <a href="https://github.com" target="_blank">🐙</a>
     </div>
-    <p class="text-sm text-gray-400">© 2025 SneakerCoin. All rights reserved.</p>
+    <p class="text-sm text-gray-400 fade-up">© 2025 SneakerCoin. All rights reserved.</p>
   </footer>
 
 </body>
