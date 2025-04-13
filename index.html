@@ -13,98 +13,95 @@
     .fade-up {
       animation: fadeInUp 0.8s ease-out forwards;
     }
-@keyframes sneakerKick {
-  0%   { transform: scale(1) rotate(0deg); }
-  30%  { transform: scale(1.2) rotate(-10deg); }
-  50%  { transform: scale(0.95) rotate(5deg); }
-  70%  { transform: scale(1.05) rotate(-3deg); }
-  100% { transform: scale(1) rotate(0deg); }
-}
-<img src="logo.png" alt="SneakerCoin Logo" class="mx-auto w-24 h-24 mb-4 fade-up" />
+
+    @keyframes sneakerKick {
+      0%   { transform: scale(1) rotate(0deg); }
+      30%  { transform: scale(1.2) rotate(-10deg); }
+      50%  { transform: scale(0.95) rotate(5deg); }
+      70%  { transform: scale(1.05) rotate(-3deg); }
+      100% { transform: scale(1) rotate(0deg); }
+    }
 
     .logo-kick {
-  animation: sneakerKick 1s ease-in-out infinite;
-}
+      animation: sneakerKick 1s ease-in-out infinite;
+    }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<body class="bg-cover bg-center text-white font-sans" style="background-image: url('bg-street.png');">
-
+<!-- ✅ Background Image Set Here -->
+<body class="bg-cover bg-center text-white font-sans" style="background-image: url('https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/images/bg-street.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
 
   <!-- Header Section -->
-  <header class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-center py-16">
-    <img src="logo.png" alt="SneakerCoin Logo" class="mx-auto w-24 h-24 mb-4 fade-up" />
+  <header class="text-center py-16">
+    <img src="logo.png" alt="SneakerCoin Logo" class="mx-auto w-24 h-24 mb-4 fade-up logo-kick" />
     <h1 class="text-5xl font-bold fade-up">SneakerCoin ($SNKR)</h1>
     <p class="mt-2 text-lg fade-up">Where streetwear meets the blockchain. Powered by the culture.</p>
     <div class="text-center my-8 fade-up">
- <a href="https://pancakeswap.finance/swap?outputCurrency=0x..." target="_blank"
-   class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
-    🛒 Buy $SNKR on PancakeSwap
-  </a>
-</div>
+      <a href="https://pancakeswap.finance/swap?outputCurrency=0x..." target="_blank"
+         class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300">
+        🛒 Buy $SNKR on PancakeSwap
+      </a>
+    </div>
   </header>
-  
-</body>
-</html>
 
-<section class="text-center p-8 bg-gradient-to-r from-pink-600 via-orange-500 to-yellow-400 text-white">
-  <h2 class="text-3xl font-bold mb-4">What is SneakerCoin?</h2>
-  <p class="max-w-2xl mx-auto">
-    SneakerCoin ($SNKR) is the meme coin where streetwear, sneakers, and crypto collide.
-    Built on the Binance Smart Chain, it's powered by the community — styled by the culture.
-  </p>
-</section>
-
-<!-- About SneakerCoin Section -->
-<section class="bg-black text-white py-16 px-6" id="about">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-6">About SneakerCoin (SNKR)</h2>
-    <p class="text-lg mb-8">
-      <strong>SneakerCoin (SNKR)</strong> is a community-powered meme token inspired by the love for sneakers,
-      streetwear, and crypto culture. Our mission is to build a fun and stylish token ecosystem that rewards holders and sneaker lovers.
+  <!-- What is SneakerCoin Section -->
+  <section class="text-center p-8 bg-black bg-opacity-70 text-white">
+    <h2 class="text-3xl font-bold mb-4">What is SneakerCoin?</h2>
+    <p class="max-w-2xl mx-auto">
+      SneakerCoin ($SNKR) is the meme coin where streetwear, sneakers, and crypto collide.
+      Built on the Binance Smart Chain, it's powered by the community — styled by the culture.
     </p>
+  </section>
 
-    <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-left">
-      <h3 class="text-2xl font-semibold mb-4">Token Details</h3>
-      <ul class="space-y-2">
-        <li><strong>Token Name:</strong> SneakerCoin</li>
-        <li><strong>Token Symbol:</strong> SNKR</li>
-        <li><strong>Blockchain:</strong> Binance Smart Chain (BSC)</li>
-        <li><strong>Contract Address:</strong> <code>0x889644b5395399557a261d487D12364aaF7bceB6</code></li>
-        <li><strong>Total Supply:</strong> 1,000,000 SNKR</li>
-        <li><strong>Decimals:</strong> 18</li>
-      </ul>
-    </div>
-
-    <div class="mt-10">
-      <h3 class="text-2xl font-semibold mb-4">Project Vision</h3>
-      <p class="text-lg">
-        SneakerCoin bridges the hype of sneaker culture with decentralized finance. We aim to:
+  <!-- About Section -->
+  <section class="bg-black bg-opacity-80 text-white py-16 px-6" id="about">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">About SneakerCoin (SNKR)</h2>
+      <p class="text-lg mb-8">
+        <strong>SneakerCoin (SNKR)</strong> is a community-powered meme token inspired by the love for sneakers,
+        streetwear, and crypto culture. Our mission is to build a fun and stylish token ecosystem that rewards holders and sneaker lovers.
       </p>
-      <ul class="list-disc list-inside text-left mt-4">
-        <li>Reward early supporters with exclusive drops and perks</li>
-        <li>Partner with sneaker resellers and communities</li>
-        <li>Introduce NFT collectibles and staking in upcoming phases</li>
-      </ul>
+
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-left">
+        <h3 class="text-2xl font-semibold mb-4">Token Details</h3>
+        <ul class="space-y-2">
+          <li><strong>Token Name:</strong> SneakerCoin</li>
+          <li><strong>Token Symbol:</strong> SNKR</li>
+          <li><strong>Blockchain:</strong> Binance Smart Chain (BSC)</li>
+          <li><strong>Contract Address:</strong> <code>0x889644b5395399557a261d487D12364aaF7bceB6</code></li>
+          <li><strong>Total Supply:</strong> 1,000,000 SNKR</li>
+          <li><strong>Decimals:</strong> 18</li>
+        </ul>
+      </div>
+
+      <div class="mt-10">
+        <h3 class="text-2xl font-semibold mb-4">Project Vision</h3>
+        <p class="text-lg">
+          SneakerCoin bridges the hype of sneaker culture with decentralized finance. We aim to:
+        </p>
+        <ul class="list-disc list-inside text-left mt-4">
+          <li>Reward early supporters with exclusive drops and perks</li>
+          <li>Partner with sneaker resellers and communities</li>
+          <li>Introduce NFT collectibles and staking in upcoming phases</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="bg-black py-6 text-center text-sm text-gray-400">
-  <!-- Social Icons -->
-<!-- Social Media Icons -->
-<div class="flex justify-center gap-6 text-2xl mb-6 fade-up">
-  <a href="https://twitter.com" target="_blank" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
-  <a href="https://t.me" target="_blank" class="hover:text-blue-400"><i class="fab fa-telegram-plane"></i></a>
-  <a href="https://discord.com" target="_blank" class="hover:text-indigo-400"><i class="fab fa-discord"></i></a>
-  <a href="https://github.com" target="_blank" class="hover:text-gray-400"><i class="fab fa-github"></i></a>
-</div>
+  <!-- Footer -->
+  <footer class="bg-black bg-opacity-80 py-6 text-center text-sm text-gray-400">
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-6 text-2xl mb-6 fade-up">
+      <a href="https://twitter.com" target="_blank" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+      <a href="https://t.me" target="_blank" class="hover:text-blue-400"><i class="fab fa-telegram-plane"></i></a>
+      <a href="https://discord.com" target="_blank" class="hover:text-indigo-400"><i class="fab fa-discord"></i></a>
+      <a href="https://github.com" target="_blank" class="hover:text-gray-400"><i class="fab fa-github"></i></a>
+    </div>
 
-<!-- Final Footer -->
-<footer class="bg-black text-center py-8">
-  <p class="text-sm text-gray-400 fade-up">© 2025 SneakerCoin. All rights reserved.</p>
-</footer>
+    <!-- Final Footer -->
+    <p class="text-sm text-gray-400 fade-up">© 2025 SneakerCoin. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
