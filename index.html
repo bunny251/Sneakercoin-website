@@ -7,6 +7,11 @@
   <title>SneakerCoin</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
@@ -31,7 +36,7 @@
 </head>
 
 <!-- ✅ Background Image Set Here -->
-<body class="bg-cover bg-center text-white font-sans" style="background-image: url('bg-street.jpg.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+<body class="bg-cover bg-center text-white font-sans overflow-x-hidden" style="background-image: url('bg-street.jpg.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
   
 <!-- Navigation Bar -->
 <nav class="bg-black text-white py-4 px-6 flex justify-between items-center shadow-md">
@@ -78,11 +83,12 @@
 
       <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-left">
         <h3 class="text-2xl font-semibold mb-4">Token Details</h3>
-        <ul class="space-y-2">
+         <ul class="space-y-2 max-w-full overflow-hidden break-words">
           <li><strong>Token Name:</strong> SneakerCoin</li>
           <li><strong>Token Symbol:</strong> SNKR</li>
           <li><strong>Blockchain:</strong> Binance Smart Chain (BSC)</li>
-          <li><strong>Contract Address:</strong> <code>0x889644b5395399557a261d487D12364aaF7bceB6</code></li>
+        <li><strong>Contract Address:</strong> 
+      <code class="break-words">0x889644b5395399557a261d487D12364aaF7bceB6</code></li>
           <li><strong>Total Supply:</strong> 1,000,000 SNKR</li>
           <li><strong>Decimals:</strong> 18</li>
         </ul>
