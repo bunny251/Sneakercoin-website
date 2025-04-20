@@ -76,22 +76,48 @@
   </a>
 </section>
 
-<!-- 📊 Token Info Card -->
-<section style="margin: 2rem auto; max-width: 800px; padding: 1.5rem; background: #f9f9f9; border-radius: 16px; font-family: Arial, sans-serif;">
-  <h3 style="margin-bottom: 1rem;">📘 Token Information</h3>
-  <ul style="list-style:none; padding-left:0; font-size: 1rem;">
+<!-- 📊 Token Info Card (Styled for Aesthetic Street Look) -->
+<section style="
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.1);
+  animation: fadeInUp 1.2s ease-out;">
+  
+  <h3 style="margin-bottom: 1rem; color: #00ffcc;">📘 Token Information</h3>
+  <ul style="list-style: none; padding-left: 0; font-size: 1rem; line-height: 1.8;">
     <li><strong>Name:</strong> SneakerCoin (SNKR)</li>
-    <li><strong>Contract:</strong> <code>0xB69770F7512E34AA16C02d9ec2ab81D63965D903</code></li>
+    <li><strong>Contract:</strong> <code style="color:#ccc;">0xB69770F7512E34AA16C02d9ec2ab81D63965D903</code></li>
     <li><strong>Chain:</strong> BNB Smart Chain (BEP-20)</li>
     <li><strong>Circulating Supply:</strong> 300,000 SNKR</li>
     <li><strong>Total Supply:</strong> 1,000,000 SNKR</li>
     <li><strong>Liquidity Proof:</strong> 
-      <a href="https://bscscan.com/token/0x77a83eac577cfbe6beecafdd01bc38e8b9dbbc1c" target="_blank">
-        View LP Token on BscScan
+      <a href="https://bscscan.com/token/0x77a83eac577cfbe6beecafdd01bc38e8b9dbbc1c" 
+         target="_blank" 
+         style="color:#00ffcc; text-decoration:underline;">
+         View LP Token on BscScan
       </a>
     </li>
   </ul>
 </section>
+
+<!-- 🎞️ Simple Fade-In Animation -->
+<style>
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
 
   <!-- What is SneakerCoin Section -->
   <section class="text-center p-8 bg-black bg-opacity-70 text-white">
